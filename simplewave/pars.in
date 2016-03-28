@@ -1,0 +1,16 @@
+&pars_input
+Nx = 201
+nt = 800
+freq = 10
+cfl = 0.25
+disip = .02
+derorder=2
+disorder=2
+m = 0.0
+q = 0.0
+Rmin = 1.
+Rout = 21.
+bc = 2 
+tau = 1.
+/
+
