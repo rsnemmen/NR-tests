@@ -36,6 +36,7 @@ c----------------------------------------------------------------------
         do i=2,Nx-1
            phi_np1(i)=2*phi_n(i)-phi_nm1(i)+dt**2*
      &        (phi_n(i+1)-2*phi_n(i)+phi_n(i-1))/dx**2
+           write(*,*) phi_np1(i),real(i)/real(Nx)
         end do
 
         return

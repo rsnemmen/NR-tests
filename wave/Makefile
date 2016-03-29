@@ -2,7 +2,7 @@
 
 SHELL = /bin/sh
 
-prefix = /home/fpretori
+prefix = /usr/local
 
 LIBS       = -lm -lbbhutil -lgfortran 
 LDFLAGS    = -L/$(prefix)/lib 
