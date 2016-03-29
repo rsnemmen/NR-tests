@@ -11,6 +11,11 @@ The example codes here were originally written by [Luis Lehner](https://www.peri
 - [ ] improve comments in codes
 - [ ] make the codes export datafiles in "python-friendly" formats instead of the mysterious SDF format used by Pretorius & Lehner
 
+# wave
+
+Solves wave equation with Dirichlet boundary conditions. 
+
+
 # simplewave
 
 Plane wave confined in *x = 7 .. 9*. Reflexive boundary conditions. Flat spacetime.
