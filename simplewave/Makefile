@@ -1,7 +1,7 @@
 #! /usr/sbin/smake
 #
-FC      = ifort  -r8
-F90     = ifort -r8
+FC      = gfortran #ifort  -r8
+F90     = gfortran #ifort -r8
 CC      = ifc
 LD      = $(F90)
 MOD     = mod
@@ -12,12 +12,12 @@ ABI     =
 ISA     =
 ARCH    = 
 OLEVEL  = -O3
-FOPTS   = -O3
-F90OPTS = -O3 -W0# -H aesu
+FOPTS   = #-O3
+F90OPTS = #-O3 -W0# -H aesu
 COPTS   =
 LIBS    = -lbbhutil -lrnpl 
 LDFLAGS = 
-LIBPATH = -L/usr/local/intel81/lib/
+LIBPATH = #-L/usr/local/intel81/lib/
 F90FLAGS= $(ARCH) $(OLEVEL) $(F90OPTS)
 FFLAGS  = $(ARCH) $(OLEVEL) $(FOPTS)
 CFLAGS  = $(ARCH) $(OLEVEL) $(COPTS)
