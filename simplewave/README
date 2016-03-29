@@ -8,7 +8,7 @@ params.f90 -- define vars for the parameters and
 
 initial.f90 -- defines the initial data. Called by main.f90
 
-evol.f90 -- performs a single step evolution with Runge-Kutta
+evolve.f90 -- performs a single step evolution with Runge-Kutta
 	    3rd order. Called by main.f90
 
 derivs.f90 -- defines routines to calculate derivatives and

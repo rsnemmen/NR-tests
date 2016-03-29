@@ -14,6 +14,8 @@
 	end do
 	
 !stupid initial data take out
+!represents a plane wave confined in the region x=7..9,
+!with reflexive BCs.
 	do i=1,NX
 	  if(x(i).ge.7.and.x(i).le.9.) then
 	    uold(1,i) = (x(i)-7.)**4 * (x(i)-9.)**4 

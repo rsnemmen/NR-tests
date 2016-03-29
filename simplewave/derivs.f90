@@ -503,14 +503,22 @@ d3= 0.016666666666666666666666666666667
   end do		
 	
 
-  du(nx)   = -(d00*u(nx)+d01*u(nx-1)+d02*u(nx-2)+d03*u(nx-3)+d04*u(nx-4)+d05*u(nx-5)+d06*u(nx-6)+d07*u(nx-7)+d08*u(nx-8)+d09*u(nx-9)+d010*u(nx-10)+d011*u(nx-11))/dx
-  du(nx-1) = -(d10*u(nx)+d11*u(nx-1)+d12*u(nx-2)+d13*u(nx-3)+d14*u(nx-4)+d15*u(nx-5)+d16*u(nx-6)+d17*u(nx-7)+d18*u(nx-8)+d19*u(nx-9)+d110*u(nx-10)+d111*u(nx-11))/dx
-  du(nx-2) = -(d20*u(nx)+d21*u(nx-1)+d22*u(nx-2)+d23*u(nx-3)+d24*u(nx-4)+d25*u(nx-5)+d26*u(nx-6)+d27*u(nx-7)+d28*u(nx-8)+d29*u(nx-9)+d210*u(nx-10)+d211*u(nx-11))/dx
-  du(nx-3) = -(d30*u(nx)+d31*u(nx-1)+d32*u(nx-2)+d33*u(nx-3)+d34*u(nx-4)+d35*u(nx-5)+d36*u(nx-6)+d37*u(nx-7)+d38*u(nx-8)+d39*u(nx-9)+d310*u(nx-10)+d311*u(nx-11))/dx		
-  du(nx-4) = -(d40*u(nx)+d41*u(nx-1)+d42*u(nx-2)+d43*u(nx-3)+d44*u(nx-4)+d45*u(nx-5)+d46*u(nx-6)+d47*u(nx-7)+d48*u(nx-8)+d49*u(nx-9)+d410*u(nx-10)+d411*u(nx-11))/dx		
-  du(nx-5) = -(d50*u(nx)+d51*u(nx-1)+d52*u(nx-2)+d53*u(nx-3)+d54*u(nx-4)+d55*u(nx-5)+d56*u(nx-6)+d57*u(nx-7)+d58*u(nx-8)+d59*u(nx-9)+d510*u(nx-10)+d511*u(nx-11))/dx		
-  du(nx-6) = -(d60*u(nx)+d61*u(nx-1)+d62*u(nx-2)+d63*u(nx-3)+d64*u(nx-4)+d65*u(nx-5)+d66*u(nx-6)+d67*u(nx-7)+d68*u(nx-8)+d69*u(nx-9)+d610*u(nx-10)+d611*u(nx-11))/dx
-  du(nx-7) = -(d70*u(nx)+d71*u(nx-1)+d72*u(nx-2)+d73*u(nx-3)+d74*u(nx-4)+d75*u(nx-5)+d76*u(nx-6)+d77*u(nx-7)+d78*u(nx-8)+d79*u(nx-9)+d710*u(nx-10)+d711*u(nx-11))/dx
+  du(nx)   = -(d00*u(nx)+d01*u(nx-1)+d02*u(nx-2)+d03*u(nx-3)+d04*u(nx-4)+d05*u(nx-5)+d06*u(nx-6)+d07*u(nx-7)+d08*u(nx-8)+&
+  			d09*u(nx-9)+d010*u(nx-10)+d011*u(nx-11))/dx
+  du(nx-1) = -(d10*u(nx)+d11*u(nx-1)+d12*u(nx-2)+d13*u(nx-3)+d14*u(nx-4)+d15*u(nx-5)+d16*u(nx-6)+d17*u(nx-7)+d18*u(nx-8)+&
+  			d19*u(nx-9)+d110*u(nx-10)+d111*u(nx-11))/dx
+  du(nx-2) = -(d20*u(nx)+d21*u(nx-1)+d22*u(nx-2)+d23*u(nx-3)+d24*u(nx-4)+d25*u(nx-5)+d26*u(nx-6)+d27*u(nx-7)+d28*u(nx-8)+&
+  			d29*u(nx-9)+d210*u(nx-10)+d211*u(nx-11))/dx
+  du(nx-3) = -(d30*u(nx)+d31*u(nx-1)+d32*u(nx-2)+d33*u(nx-3)+d34*u(nx-4)+d35*u(nx-5)+d36*u(nx-6)+d37*u(nx-7)+d38*u(nx-8)+&
+  			d39*u(nx-9)+d310*u(nx-10)+d311*u(nx-11))/dx		
+  du(nx-4) = -(d40*u(nx)+d41*u(nx-1)+d42*u(nx-2)+d43*u(nx-3)+d44*u(nx-4)+d45*u(nx-5)+d46*u(nx-6)+d47*u(nx-7)+d48*u(nx-8)+&
+  			d49*u(nx-9)+d410*u(nx-10)+d411*u(nx-11))/dx		
+  du(nx-5) = -(d50*u(nx)+d51*u(nx-1)+d52*u(nx-2)+d53*u(nx-3)+d54*u(nx-4)+d55*u(nx-5)+d56*u(nx-6)+d57*u(nx-7)+d58*u(nx-8)+&
+  			d59*u(nx-9)+d510*u(nx-10)+d511*u(nx-11))/dx		
+  du(nx-6) = -(d60*u(nx)+d61*u(nx-1)+d62*u(nx-2)+d63*u(nx-3)+d64*u(nx-4)+d65*u(nx-5)+d66*u(nx-6)+d67*u(nx-7)+d68*u(nx-8)+&
+  			d69*u(nx-9)+d610*u(nx-10)+d611*u(nx-11))/dx
+  du(nx-7) = -(d70*u(nx)+d71*u(nx-1)+d72*u(nx-2)+d73*u(nx-3)+d74*u(nx-4)+d75*u(nx-5)+d76*u(nx-6)+d77*u(nx-7)+d78*u(nx-8)+&
+  			d79*u(nx-9)+d710*u(nx-10)+d711*u(nx-11))/dx
   		
 	end subroutine derivs48_b		
 	END MODULE M_DERIVS

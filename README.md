@@ -7,6 +7,6 @@ The example codes here were originally written by [Luis Lehner](https://www.peri
 
 # simplewave
 
-
+Plane wave confined in *x = 7 .. 9*. Reflexive boundary conditions. Flat spacetime.
 
 # wave on BH
