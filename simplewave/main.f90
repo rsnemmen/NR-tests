@@ -60,10 +60,17 @@
 !RN: will replace SDF file format with a more friendly, common file
 !format
 	  if(mod(i,freq).eq.0) then
-	  !will call here for output
-	  	ret = gft_out_full('phi',time, nx, 'x', 1, x, uold(1,:))
-        ret = gft_out_full('g',time, nx, 'x', 1, x, uold(2,:))
-        ret = gft_out_full('f',time, nx, 'x', 1, x, uold(3,:))
+	  	!OPEN(UNIT=1000,FILE=FNAME,STATUS='REPLACE')
+	  	print *, "=========================================== " 
+	  	print *, "t = ", time, nx
+	  	print *, uold(1,:)
+	  	print *, uold(2,:)
+	  	print *, uold(3,:)
+
+		! commented out from previous version based on SDF
+	  	!ret = gft_out_full('phi',time, nx, 'x', 1, x, uold(1,:))
+        !ret = gft_out_full('g',time, nx, 'x', 1, x, uold(2,:))
+        !ret = gft_out_full('f',time, nx, 'x', 1, x, uold(3,:))
 	  end if
 
 	
